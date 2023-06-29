@@ -1,12 +1,11 @@
-# ResidUP - A inovação que faltava no seu dia a dia!
+# Mario Bros
 
-[PROJETO FEITO PARA TREINO
-]
+[PRIMERO JOGO DESENVOLVIDO PARA TESTE DE HABILIDADES E CONHECIMENTOS]
 
 
 
 ## Introdução
-Nste jogo a pontuação sobe a cada vez que o usuario pula por cima cano, quando ele bate, a pontuação é zerada e o usuário volta do 0.
+Neste jogo a pontuação sobe a cada vez que o usuario pula por cima cano, quando ele bate, a pontuação é zerada e o usuário volta do 0.
 Para futuras atualizações, pretendo melhorar o jogo e deixar cada vez mais parecido com o original.
 
 
