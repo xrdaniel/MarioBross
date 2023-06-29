@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button{
+    float: right;
+    padding: 8px;
+    border-radius: 7px;
+    border: none;
+    margin-top: 30px;
+    margin-right: 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .modal-content {
+    border-radius: 15px;
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+ a {
+    text-decoration: none;
+    Color: black;
+    font-weight: bold;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .story {
+    margin-top: 50px;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    background-color: #666;
+  }
+
+
+
+body{
+    background-color: rgb(38, 33, 17);
+}
+
+header {
+    background-color: red;
+    height: 95px;
+    width: 100%;
+    box-shadow: 15px black;
+}
+
+.logo {
+    float: left;
+    margin: 2px;
+    height: 90px;
+}
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: 30px solid rgb(15, 212, 15);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms infinite ease-out;
+}
+
+.clouds {
+    margin-top: 5px;
+    position: absolute;
+    width: 400px;
+    animation: clouds-animation 6s infinite linear;
+}
+
+.hidden {
+    display: none;
+    float: right;
+}
+
+.go{
+    color: red;
+    margin-left: 40%;
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 15%;
+    text-shadow: -1px -1px 0 #000
+}
+
+.score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos adicionados para centralizar os botões */
+#restart-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+
+
+@keyframes pipe-animation {
+
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+
+}
+@keyframes jump{
+    0%{
+      bottom: 0;  
+    }
+    40%{
+        bottom: 180px; 
+    }
+    50%{
+        bottom: 180px;
+    }
+    60%{
+        bottom: 180px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+@keyframes clouds-animation{
+    from{
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}

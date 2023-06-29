@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="img/LogoJogo.png" class="logo" alt="">
+        <button class="button" id="openModal">Sobre Mim</button>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Olá, Me chamo Daniel!</h2>
+      <p>
+        Tenho 20 Anos e estou no quarto semestre da faculdade de Análise e Desenvolvimento de Sistemas e estou em busca de uma primeira oportunidade na área.<br>
+        Caso tenha interesse em saber mais sobre os projetos que fiz e participei, me siga no <a href="https://www.linkedin.com/in/xrdaniel/">Linkedin</a> e no <a href="https://github.com/xrdaniel">Github</a>.
+      </p>
+    
+    </div>
+  </div>
+    </header>
+    <div class="game-board">
+        <img src="img/clouds.png" class="clouds" alt="">
+        <div id="game-over" class="hidden">
+            <h2 class="go">Game Over</h2>
+            <button id="restart-button">Restart</button>
+        </div>
+        <div id="score" class="score">Score: 0</div>
+        <img src="img/mario.gif" class="mario" alt="mario">
+        <img src="img/pipe.png" class="pipe" alt="pipe">
+    </div>
+    
+</body>
+</html>
+
